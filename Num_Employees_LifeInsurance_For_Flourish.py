@@ -24,7 +24,7 @@ for i in range(0, monthdiff+1, 3):
 
     # References
     url = 'http://apis.data.go.kr/1160100/service/GetLifeInsuCompInfoService/getLifeInsuCompGeneInfo'
-    queryParams = '?' + 'ServiceKey=' + 'SzfcS4DsKYQpTde0nf0wDoNDomO7hBvjakHgeNqSGwh0USlMlVeywpcOhL2mA5MwxGryRC238PEOnIdUJSsgQA%3D%3D' + \
+    queryParams = '?' + 'ServiceKey=' + '' + \
                   '&numOfRows=' + rownum + \
                   '&pageNo=' + pgnum + \
                   '&resultType=' + 'json' + \
