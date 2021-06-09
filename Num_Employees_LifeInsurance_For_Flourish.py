@@ -6,7 +6,7 @@ from dateutil.relativedelta import relativedelta as rd
 from functools import reduce
 
 #Variable Definition
-rownum, pgnum, ym = '196', '1', '201203'
+rownum, pgnum, ym = '300', '1', '201203'
 
 #Time Difference
 now = pd.datetime.now()
@@ -24,7 +24,7 @@ for i in range(0, monthdiff+1, 3):
 
     # References
     url = 'http://apis.data.go.kr/1160100/service/GetLifeInsuCompInfoService/getLifeInsuCompGeneInfo'
-    queryParams = '?' + 'ServiceKey=' + '' + \
+    queryParams = '?' + 'ServiceKey=' + 'SzfcS4DsKYQpTde0nf0wDoNDomO7hBvjakHgeNqSGwh0USlMlVeywpcOhL2mA5MwxGryRC238PEOnIdUJSsgQA%3D%3D' + \
                   '&numOfRows=' + rownum + \
                   '&pageNo=' + pgnum + \
                   '&resultType=' + 'json' + \
@@ -51,6 +51,7 @@ for i in range(0, monthdiff+1, 3):
         ResultMonths.append(subsum)
 
     except:
+        print('Error' + ymtemp)
         continue
 
 #Join
